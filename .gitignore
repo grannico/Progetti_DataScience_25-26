@@ -1,0 +1,5 @@
+# Ignora l'ambiente virtuale
+venv/
+env/
+.venv/
+.env/
