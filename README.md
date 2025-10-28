@@ -27,8 +27,8 @@ Per configurare l'ambiente di sviluppo e contribuire al progetto, segui questi p
 
 1.  **Clonare il repository:**
     ```bash
-    git clone [INCOLLA QUI L'URL HTTPS DEL TUO REPOSITORY]
-    cd [nome-del-repository]
+    git clone https://github.com/grannico/Progetti_DataScience_25-26
+    cd Progetti_DataScience_25-26
     ```
 
 2.  **Creare un ambiente virtuale:**
