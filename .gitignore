@@ -3,3 +3,15 @@ venv/
 env/
 .venv/
 .env/
+
+# --- File di Dati Pesanti (da ignorare assolutamente) ---
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# Ignora la cartella specifica dei dati di GoT
+got/
+
+# Ignora i file di grafo
+*.graphml
