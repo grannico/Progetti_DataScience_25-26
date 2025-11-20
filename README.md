@@ -6,8 +6,8 @@ Questo repository raccoglierà i progetti e le analisi sviluppate per il corso d
 
 Il repository è organizzato in cartelle, dove ogni cartella rappresenta un singolo progetto o modulo di analisi:
 
-* **`Progetto 1`**: Contiene notebook, script e dati relativi al primo progetto.
-* **`[Nome_Progetto_2]/`**: Contiene notebook, script e dati relativi al secondo progetto.
+* **`Progetto 1`**: Applicazione pratica di tecniche di Classificazione, Clustering e Forecasting, precedute da un'approfondita analisi descrittiva ed esplorativa dei dati.
+* **`Game_of_Thrones_SNA`**: Analisi delle reti sociali (SNA) applicata alla serie TV *Game of Thrones*. 
 * *(...e così via per i progetti futuri)*
 
 ## Stack Tecnologico
@@ -20,6 +20,8 @@ Lo stack tecnologico comune utilizzato per i progetti in questo repository inclu
 * **Seaborn:** Per la visualizzazione statistica avanzata.
 * **Scikit-learn:** Per l'implementazione di modelli di machine learning.
 * **Jupyter:** Per l'analisi esplorativa, la prototipazione e la documentazione.
+* **NetworkX:** Per la creazione, manipolazione e studio della struttura e delle dinamiche delle reti complesse.
+* **Gephi:** Software per la visualizzazione avanzata, esplorazione interattiva e spazializzazione dei grafi.
 
 ## Setup e Installazione
 
