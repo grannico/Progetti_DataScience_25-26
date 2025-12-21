@@ -17,3 +17,6 @@ got/
 *.graphml
 
 .DS_Store
+
+Sentiment analysis/venv_m2/
+SentimentAnalysis/venv_m2/
