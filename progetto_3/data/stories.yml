@@ -1,0 +1,21 @@
+version: "3.1"
+
+stories:
+
+- story: Percorso felice ricerca ricetta
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cerca_ricetta
+  - action: action_cerca_ricette
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Ricerca con aggiunta ingredienti
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cerca_ricetta
+  - action: action_cerca_ricette
+  - intent: fornisce_ingredienti
+  - action: action_cerca_ricette

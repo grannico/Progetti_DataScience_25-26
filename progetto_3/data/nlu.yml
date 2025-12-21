@@ -1,0 +1,112 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - ciao
+    - buongiorno
+    - ehi chef
+    - start
+    - ciao frigo
+    - ehi
+
+- intent: goodbye
+  examples: |
+    - ciao grazie
+    - arrivederci
+    - a presto
+    - basta così
+    - grazie mille
+
+- intent: cerca_ricetta
+  examples: |
+    # Esempi con la Carbonara/Amatriciana (per risolvere il tuo problema specifico)
+    - in frigo ho del [guanciale](ingrediente), delle [uova](ingrediente) e del [pecorino](ingrediente)
+    - una ricetta facile con [guanciale](ingrediente), [uova](ingrediente) e [pecorino](ingrediente)
+    - cucinare con [guanciale](ingrediente) e [pomodoro](ingrediente)
+    - ho [pancetta](ingrediente) e [uova](ingrediente)
+    
+    # Esempi generici (Verdure, Carne, Pesce)
+    - ho [uova](ingrediente) e [zucchine](ingrediente)
+    - cosa posso cucinare con [pollo](ingrediente) e [patate](ingrediente)?
+    - ho il frigo vuoto, mi è rimasta solo della [pasta](ingrediente) e del [tonno](ingrediente)
+    - trovami una ricetta con [melanzane](ingrediente)
+    - [pomodori](ingrediente), [mozzarella](ingrediente) e [basilico](ingrediente)
+    - ho solo [cipolle](ingrediente) e [carote](ingrediente)
+    - vorrei usare del [riso](ingrediente)
+    - cucinare con [funghi](ingrediente) e [panna](ingrediente)
+    - ricetta con [gamberi](ingrediente) e [zucchine](ingrediente)
+    - ho del [macinato](ingrediente) e della [salsa di pomodoro](ingrediente)
+    - cosa faccio con [spinaci](ingrediente) e [ricotta](ingrediente)?
+    - ho [petto di pollo](ingrediente) e [limone](ingrediente)
+    - [zucca](ingrediente) e [salsiccia](ingrediente)
+    - [pesce spada](ingrediente) e [pomodorini](ingrediente)
+    
+    # Esempi Dolci
+    - ho [farina](ingrediente), [zucchero](ingrediente) e [uova](ingrediente)
+    - cosa faccio con [cioccolato](ingrediente) e [panna](ingrediente)?
+    - [mascarpone](ingrediente) e [caffè](ingrediente)
+    - [mele](ingrediente) e [cannella](ingrediente)
+    - [ricotta](ingrediente) e [gocce di cioccolato](ingrediente)
+    
+    # Esempi conversazionali complessi
+    - ho voglia di un [dolce](tipologia) [facile](difficolta) da preparare e [veloce](tempo_req)
+    - dammi una ricetta [veloce](tempo_req) per la cena
+    - vorrei un [primo](tipologia) [facile](difficolta) con [zucchine](ingrediente)
+    - qualcosa di [difficile](difficolta) per stupire gli ospiti
+    - cerco un [secondo](tipologia) di [pesce](ingrediente) [rapido](tempo_req)
+    - una [torta](tipologia) che si fa in [poco tempo](tempo_req)
+    - ricetta [media](difficolta) con [patate](ingrediente)
+
+    # Esempi con PIATTI SPECIFICI (Fondamentale per il Tiramisù)
+    - ho voglia di [tiramisù](tipologia)
+    - come si fa la [carbonara](tipologia)?
+    - ricetta della [parmigiana](tipologia)
+    - vorrei mangiare [lasagne](tipologia)
+    - mi dai la ricetta del [risotto ai funghi](tipologia)
+    - [torta di mele](tipologia)
+    - [ciambellone](tipologia)
+    - [crepes](tipologia)
+    
+    # Esempi conversazionali misti
+    - un [dolce](tipologia) [veloce](tempo_req)
+    - una [torta](tipologia) [facile](difficolta)
+    - un [primo](tipologia) sfizioso
+
+    # ESEMPI PER IMPASTI (Fondamentali per Focaccia/Pizza)
+    - ho [farina](ingrediente), [lievito](ingrediente), [olio](ingrediente) e [sale](ingrediente)
+    - [acqua](ingrediente), [farina](ingrediente) e [lievito di birra](ingrediente)
+    - una ricetta con [lievito](ingrediente) e [zucchero](ingrediente)
+    - vorrei impastare qualcosa con [farina 00](ingrediente) e [olio evo](ingrediente)
+    - ho del [lievito istantaneo](ingrediente)
+    - [sale](ingrediente), [olio](ingrediente), [farina](ingrediente)
+    
+    # ESEMPI LISTE LUNGHE (Per insegnargli a non perdersi pezzi)
+    - in frigo ho [uova](ingrediente), [latte](ingrediente), [burro](ingrediente) e [zucchero](ingrediente)
+    - [pomodori](ingrediente), [tonno](ingrediente), [mais](ingrediente) e [olive](ingrediente)
+
+    # ESEMPI 
+    - voglio preparare un [dolce](tipologia) senza usare gli ingredienti di prima
+    - cambia tipologia vorrei un [secondo](tipologia)
+    - adesso passiamo al [dessert](tipologia)
+    - fammi vedere dei [primi](tipologia)
+    - cerca un [antipasto](tipologia) invece
+
+- intent: fornisce_ingredienti
+  examples: |
+    - aggiungi anche [carote](ingrediente)
+    - ho anche del [sedano](ingrediente)
+    - usa pure [olio](ingrediente) e [sale](ingrediente)
+    - ah, ho anche [aglio](ingrediente)
+    - metti anche il [pepe](ingrediente)
+    - considera anche il [burro](ingrediente)
+
+- intent: sorprendimi
+  examples: |
+    - sorprendimi
+    - non so cosa cucinare
+    - dammi un consiglio a caso
+    - scegli tu per me
+    - ho voglia di qualcosa di buono ma non so cosa
+    - mi sento fortunato
+    - dimmi una ricetta a caso

@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - cerca_ricetta
+  - fornisce_ingredienti
+  - inizia_cucinare
+  - step_successivo
+  - sorprendimi
+
+entities:
+  - ingrediente
+  - tipologia     # Es: dolce, primo, secondo
+  - difficolta    # Es: facile, media
+  - tempo_req     # Es: veloce, rapido
+  - titolo_ricetta 
+
+slots:
+  # --- SLOT DI RICERCA (Esistenti) ---
+  ingrediente:
+    type: list
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: ingrediente
+  
+  tipologia:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tipologia
+
+  difficolta:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: difficolta
+
+  tempo_req:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tempo_req
+
+  # --- NUOVI SLOT TECNICI (Per la Cucina Interattiva) ---
+  # Questi slot vengono riempiti solo dalle Custom Actions (Python),
+  # quindi usiamo "mappings: []" (lista vuota) o custom.
+  titolo_ricetta:
+    type: text
+    influence_conversation: true # Importante: lascia che Rasa lo veda
+    mappings:
+    - type: from_entity
+      entity: titolo_ricetta
+      
+  titolo_ricetta_corrente:
+    type: text
+    influence_conversation: false
+    mappings: []
+
+  step_corrente:
+    type: float  # Usiamo float per gestire l'indice numerico (0, 1, 2...)
+    influence_conversation: false
+    initial_value: 0
+    mappings: []
+
+  lista_step:
+    type: any    # "Any" perché è una Lista di stringhe complessa
+    influence_conversation: false
+    mappings: []
+
+responses:
+  utter_greet:
+  - text: "Ciao! Sono FrigoChef 🍳. Dimmi cosa hai nel frigo (es: 'ho uova e zucchine')!"
+  utter_goodbye:
+  - text: "Buon appetito! 👋"
+  utter_default:
+  - text: "🤔 Non ho capito bene. Ricorda che sono uno Chef! Dimmi quali ingredienti hai (es. 'ho uova e farina') o chiedimi una ricetta."
+
+actions:
+  # Deve corrispondere esattamente al metodo name() in actions.py
+  - action_cerca_ricette
+  - action_inizia_cucinare
+  - action_step_successivo
+  - action_sorprendimi

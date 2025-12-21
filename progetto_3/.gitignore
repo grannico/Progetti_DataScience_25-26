@@ -1,0 +1,27 @@
+# --- RASA SPECIFIC ---
+models/
+.rasa/
+events.db
+rasa.log
+graph.html
+
+# --- SECURITY ---
+# Ignoriamo il file con i token reali
+credentials.yml
+
+# --- DATASETS & LARGE FILES ---
+actions/*.csv
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# --- IDE & SYSTEM ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

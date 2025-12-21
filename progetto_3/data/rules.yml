@@ -1,0 +1,46 @@
+version: "3.1"
+
+rules:
+
+  # --- REGOLE BASE (Le tue esistenti) ---
+  - rule: Rispondi sempre al saluto
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - rule: Saluta sempre alla fine
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  # --- REGOLE CORE (Nuove Funzionalità) ---
+  
+  # 1. Quando l'utente cerca ingredienti -> Esegui Motore di Ricerca
+  - rule: Cerca Ricetta
+    steps:
+    - intent: cerca_ricetta
+    - action: action_cerca_ricette
+
+  # 2. Quando l'utente clicca "Cucina Ora" -> Avvia la modalità Chef
+  - rule: Attiva Modalità Chef (Inizio Cucinare)
+    steps:
+    - intent: inizia_cucinare
+    - action: action_inizia_cucinare
+
+  # 3. Quando l'utente clicca "Fatto! ✅" -> Mostra lo step successivo
+  - rule: Avanzamento Step Ricetta
+    steps:
+    - intent: step_successivo
+    - action: action_step_successivo
+    
+  # 4. Fallback generale per NLU (Non ho capito)
+  - rule: Fallback rule (Non ho capito)
+    steps:
+    - intent: nlu_fallback
+    - action: utter_default
+
+  # 5. Quando l'utente chiede una ricetta a sorpresa -> Fornisci Ricetta Random
+  - rule: Sorprendimi (Ricetta Random)
+    steps:
+    - intent: sorprendimi
+    - action: action_sorprendimi
