@@ -20,3 +20,5 @@ got/
 
 Sentiment analysis/venv_m2/
 SentimentAnalysis/venv_m2/
+
+.vscode/

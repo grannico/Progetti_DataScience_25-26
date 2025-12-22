@@ -2,11 +2,22 @@
 
 Questo progetto richiede l'installazione del framework Rasa, l'addestramento del modello e la configurazione di un tunnel ngrok per la comunicazione con Telegram.
 
-## 1. Gestione Ambiente Software
-Il progetto utilizza un ambiente Conda per gestire le dipendenze. 
+Questo progetto implementa un chatbot tramite il framework Rasa. Per garantire la compatibilità, sono forniti due file di configurazione dell'ambiente a seconda del sistema operativo.
 
-- **Creazione ambiente**: `conda env create -f environment.yml`
-- **Attivazione**: `conda activate <nome_ambiente>`
+## 1. Gestione Ambiente Software (Conda)
+È necessario creare l'ambiente specifico per il proprio sistema operativo:
+
+**Su Windows:**
+```bash
+conda env create -f environment_win.yml
+conda activate chef_bot
+```
+
+**Su MacOs**
+```bash
+conda env create -f environment_mac.yml
+conda activate chef_bot
+```
 
 ## 2. Configurazione Credenziali e Sicurezza
 I file contenenti i token di accesso sono stati esclusi dal tracking di Git.
