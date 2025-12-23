@@ -1,27 +1,21 @@
 # Progetti Data Science 2025/2026
 
-Questo repository raccoglierà i progetti e le analisi sviluppate per il corso di Data Science durante l'anno accademico 2025/2026.
+Questo repository raccoglie i progetti e le analisi sviluppate per il corso di Data Science durante l'anno accademico 2025/2026.
 
-## Struttura del Repository
+L'obiettivo è coprire l'intero ciclo di vita del dato: dall'analisi esplorativa e mining, passando per l'analisi di reti complesse, fino alle moderne applicazioni di NLP e Generative AI.
 
-Il repository è organizzato in cartelle, dove ogni cartella rappresenta un singolo progetto o modulo di analisi:
+## 📂 Indice dei Progetti
 
-* **`Progetto 1`**: Applicazione pratica di tecniche di Classificazione, Clustering e Forecasting, precedute da un'approfondita analisi descrittiva ed esplorativa dei dati.
-* **`Game_of_Thrones_SNA`**: Analisi delle reti sociali (SNA) applicata alla serie TV *Game of Thrones*. 
-* *(...e così via per i progetti futuri)*
+Di seguito una sintesi dei moduli che compongono il progetto d'esame. Per dettagli specifici, documentazione e codice, fare riferimento al **README** all'interno di ciascuna sottocartella.
 
-## Stack Tecnologico
-
-Lo stack tecnologico comune utilizzato per i progetti in questo repository include:
-
-* **Python 3.x**
-* **Pandas:** Per la manipolazione e l'analisi dei dati.
-* **Matplotlib:** Per la creazione di visualizzazioni statiche.
-* **Seaborn:** Per la visualizzazione statistica avanzata.
-* **Scikit-learn:** Per l'implementazione di modelli di machine learning.
-* **Jupyter:** Per l'analisi esplorativa, la prototipazione e la documentazione.
-* **NetworkX:** Per la creazione, manipolazione e studio della struttura e delle dinamiche delle reti complesse.
-* **Gephi:** Software per la visualizzazione avanzata, esplorazione interattiva e spazializzazione dei grafi.
+| # | Progetto | Descrizione | Stack Tecnologico | Cartella |
+| :--- | :--- | :--- | :--- | :---: |
+| **01** | **Analisi Dati & Mining** | Pipeline completa di Data Science: Analisi descrittiva (EDA), Classificazione, Clustering e Forecasting su Serie Temporali. | *Pandas, Scikit-learn, Seaborn, Matplotlib* | [Vai](./01_Analisi_Mining) |
+| **02** | **SNA: Game of Thrones** | Social Network Analysis applicata ai personaggi e alle relazioni nella serie TV *Il Trono di Spade*. | *NetworkX, Gephi, Pandas* | [Vai](./02_SNA_GameOfThrones) |
+| **03** | **[Nome Progetto 3]** | [Inserire qui breve descrizione del compito svolto nel terzo progetto]. | *Python, Pandas* | [Vai](./03_Nome_Progetto_3) |
+| **04** | **Sentiment Analysis** | Analisi del sentimento applicata a dataset testuali (recensioni/commenti) per estrarre opinioni e polarità. | *NLTK/Spacy, Scikit-learn, Pandas* | 🚧 *In lavorazione* |
+| **05** | **Prompt Engineering** | Esplorazione delle tecniche di prompting per Large Language Models (LLM) e generazione di output strutturati. | *LLM APIs, Python* | 🚧 *In lavorazione* |
+---
 
 ## Setup e Installazione
 
