@@ -10,9 +10,9 @@ Di seguito una sintesi dei moduli che compongono il progetto d'esame. Per dettag
 
 | # | Progetto | Descrizione | Stack Tecnologico | Cartella |
 | :--- | :--- | :--- | :--- | :---: |
-| **01** | **Analisi Dati & Mining** | Pipeline completa di Data Science: Analisi descrittiva (EDA), Classificazione, Clustering e Forecasting su Serie Temporali. | *Pandas, Scikit-learn, Seaborn, Matplotlib* | [Vai](./01_Analisi_Mining) |
-| **02** | **SNA: Game of Thrones** | Social Network Analysis applicata ai personaggi e alle relazioni nella serie TV *Il Trono di Spade*. | *NetworkX, Gephi, Pandas* | [Vai](./02_SNA_GameOfThrones) |
-| **03** | **[Nome Progetto 3]** | [Inserire qui breve descrizione del compito svolto nel terzo progetto]. | *Python, Pandas* | [Vai](./03_Nome_Progetto_3) |
+| **01** | **Analisi Dati & Mining** | Pipeline completa di Data Science: Analisi descrittiva (EDA), Classificazione, Clustering e Forecasting su Serie Temporali. | *Pandas, Scikit-learn, Seaborn, Matplotlib* | [Vai](./progetto_1) |
+| **02** | **SNA: Game of Thrones** | Social Network Analysis applicata ai personaggi e alle relazioni nella serie TV *Il Trono di Spade*. | *NetworkX, Gephi, Pandas* | [Vai](./progetto_2) |
+| 03 | Chatbot FrigoChef | Assistente virtuale basato su Rasa: ricerca ricette tramite algoritmo semantico (TF-IDF) e guida interattiva passo-passo. | Rasa, Python, Scikit-learn, Telegram | [Vai](./progetto_3) |
 | **04** | **Sentiment Analysis** | Analisi del sentimento applicata a dataset testuali (recensioni/commenti) per estrarre opinioni e polarità. | *NLTK/Spacy, Scikit-learn, Pandas* | 🚧 *In lavorazione* |
 | **05** | **Prompt Engineering** | Esplorazione delle tecniche di prompting per Large Language Models (LLM) e generazione di output strutturati. | *LLM APIs, Python* | 🚧 *In lavorazione* |
 ---
