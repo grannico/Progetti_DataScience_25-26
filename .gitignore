@@ -11,6 +11,9 @@ env/
 *.rar
 *.csv
 
+# Ignora la cartella dei dati
+/
+progetto_1/data/
 
 
 # Ignora i file di grafo
