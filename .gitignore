@@ -3,6 +3,7 @@ venv/
 env/
 .venv/
 .env/
+SentimentAnalysis/venv_2
 
 # --- File di Dati Pesanti (da ignorare assolutamente) ---
 *.tgz
@@ -10,6 +11,7 @@ env/
 *.zip
 *.rar
 *.csv
+*.vec
 
 # Ignora la cartella dei dati
 /
