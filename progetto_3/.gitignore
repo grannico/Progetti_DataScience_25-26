@@ -5,6 +5,9 @@ events.db
 rasa.log
 graph.html
 
+# Report di test rigenerabili
+results/
+
 # --- SECURITY ---
 # Ignoriamo il file con i token reali
 credentials.yml
@@ -19,6 +22,13 @@ __pycache__/
 venv/
 env/
 .env
+
+# --- TEST / NOTEBOOK CACHE ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
 
 # --- IDE & SYSTEM ---
 .vscode/

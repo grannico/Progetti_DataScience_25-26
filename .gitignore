@@ -17,6 +17,12 @@ SentimentAnalysis/venv_2
 /
 progetto_1/data/
 
+# Grafici esportati dai notebook (gli output restano incorporati nei file .ipynb)
+progetto_1/Analisi_Descrittiva/figure_eda/
+progetto_1/Classificazione/figure_classificazione/
+progetto_1/Clustering/figure_clustering/
+progetto_1/Forecasting/figure_forecasting/
+
 
 # Ignora i file di grafo
 *.graphml
@@ -27,3 +33,21 @@ Sentiment analysis/venv_m2/
 SentimentAnalysis/venv_m2/
 
 .vscode/
+
+# File locali dell'editor e cache generate
+*.code-workspace
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Archivio e file temporanei solo locali
+z_archive/
+tmp/
+
+# Segreti e configurazioni locali
+.env
+.env.*
+!.env.example
+*.pem
+*.key

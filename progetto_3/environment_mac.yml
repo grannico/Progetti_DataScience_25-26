@@ -195,4 +195,3 @@ dependencies:
       - wsproto==1.2.0
       - yarl==1.15.2
       - zipp==3.20.2
-prefix: /Users/niccolo/miniconda3/envs/chef_bot

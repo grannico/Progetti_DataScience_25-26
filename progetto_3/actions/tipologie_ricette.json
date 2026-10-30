@@ -1,0 +1,1194 @@
+[
+  {
+    "Titolo": "Tiramisù",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta tenerina",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta di mele",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Tortino di cioccolato con cuore fondente",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Crepes dolci e salate (ricetta base)",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Pancake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta per la pizza",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Besciamella",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Spaghetti alla Carbonara",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto alla zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Crema pasticcera",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Polpette al sugo",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Muffin con gocce di cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cookies",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta frolla",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Focaccia (fügassa) alla genovese",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Spaghetti all'Amatriciana",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Gnocchi di patate",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta alla gricia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Brownies",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Salame di cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Gateau di patate",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Orecchiette con le cime di rapa",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Ragù alla bolognese",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Ravioli cinesi al vapore",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Patate al forno",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Crepe alla Nutella",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Lasagne alla bolognese",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Cinnamon rolls",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Strudel di mele",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pizzoccheri",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Chili con carne",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Sachertorte",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta 7 vasetti",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Vellutata di zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Cavolfiori gratinati",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Biscotti di pan di zenzero (gingerbread)",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "New York Cheesecake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta della nonna",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta con la zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Focaccia morbida",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Pasta e lenticchie",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Purè di patate",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Spätzle di spinaci con speck e panna",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Parmigiana di melanzane",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Risotto allo zafferano",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Gnocchi alla romana",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto ai funghi porcini",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Involtini primavera",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Filetto al pepe verde",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Hummus",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Panzerotti fritti",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Pan di Spagna",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta di carote",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Polpette di zucca",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Spezzatino di manzo",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Torta caprese",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Spaghetti alle vongole",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Crema di zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Crema al mascarpone",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Pasta fresca all'uovo (sfoglia e formati)",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Farinata di ceci",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Muffin al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Brasato al Barolo",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Danubio salato",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Pasta e fagioli",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto ai funghi",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Castagnaccio alla toscana",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Rotolo alla Nutella",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cosce di pollo al forno",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Spaghetti Cacio e Pepe",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pollo alle mandorle",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Spezzatino di vitello con patate",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Gnocchi di zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Cheesecake fredda",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Riso alla cantonese",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pollo al curry",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Chiffon cake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Polpette di carne",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Cheesecake ai frutti di bosco",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Passatelli in brodo",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta e patate alla napoletana",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Guacamole",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Spezzatino con piselli",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Waffle",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Castagne al forno",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Banana bread",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta all'arancia",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Ravioli di carne giapponesi (Gyoza)",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Profiteroles al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Focaccia barese",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Focaccia",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Genovese",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta al forno",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Canederli alla tirolese (Knödel)",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto zucca e gorgonzola",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Zuppa di cipolle",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Lingue di gatto",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Polpette di melanzane",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Vin brulé (mulled wine)",
+    "Tipologia": "bevanda"
+  },
+  {
+    "Titolo": "Ribollita",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Biscotti al vino",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Canestrelli",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Panna cotta",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Panini al latte",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Pasta frolla morbida",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Polpette di spinaci e ricotta",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Torta allo yogurt",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Bretzel",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Tagliatelle al ragù bianco",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Arancini di riso",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Dorayaki",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Couscous alle verdure",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Pizzette rosse",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Cheesecake alla Nutella",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Calamari ripieni",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Lasagne con la zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Red Velvet Cake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Saltimbocca alla romana",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Cioccolata calda",
+    "Tipologia": "bevanda"
+  },
+  {
+    "Titolo": "Gnocchi alla sorrentina",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Panettone",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Scaloppine al limone",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Pasta zucca e salsiccia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pollo al limone",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Pizzicotti di pasta di mandorle",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pastiera napoletana",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Crostata morbida al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta per il pane",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Torta paradiso",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Crema catalana",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pollo alla cacciatora",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Crostata alla confettura di albicocche",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Rosti",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Risotto al pomodoro",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Orecchiette broccoli e salsiccia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto con zucchine",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Cheesecake al limone",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cannelloni",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Piadina romagnola fatta in casa",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Donuts",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Risotto con zucca e salsiccia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta camilla",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Parigina",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Cannelloni ricotta e spinaci",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Minestrone di verdure",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta e ceci",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta rustica salata",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Budino cachi e cacao",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pollo arrosto",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Tortelli di zucca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta margherita",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Costine glassate con salsa bbq",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Vitello tonnato",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Flan di zucca",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Pesto alla Genovese",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Torta magica",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Ciambellone",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cantucci",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Panettone con lievito di birra",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Fegato alla veneziana",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Calamarata",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Scaloppine ai funghi",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Graffe",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Seppie con piselli",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Cornetti salati",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Pasta alla Norma",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Ravioli ricotta e spinaci",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Carne alla pizzaiola",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Zuppa di legumi e cereali",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Spaghetti alla puttanesca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Omelette (ricetta base)",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Porridge",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "French toast",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Crostata alla Nutella",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Salmone croccante",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Polpette di tonno e ricotta",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Crema al Parmigiano",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Biscotti al burro",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Insalata di finocchi e arance",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Biscotti con gocce di cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Zuppa di lenticchie",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta choux (bignè)",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Crostata alla frutta",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Sformatini di spinaci",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Gulash ungherese",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Torta soffice al limone",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Limoncello",
+    "Tipologia": "bevanda"
+  },
+  {
+    "Titolo": "Ramen",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Orata al forno",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Risotto con gorgonzola, pere e noci",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Polenta",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Filetti di merluzzo al forno",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Mandorle pralinate",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Croque monsieur",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Ossobuco alla milanese con risotto giallo",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Pizza in teglia alta e morbida",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Brodo vegetale",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Struffoli",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Paella de marisco",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Frittata al forno con ricotta e spinaci",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Trofie con crema di zucchine e pancetta",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Mozzarella in carrozza",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Lasagne al pesto",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Zuppa di ceci",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Casatiello napoletano",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Polpette al forno",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Petti di pollo al latte",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Fagottini di pasta sfoglia con cuore di mela",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Spaghetti di riso con carne e verdure",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pennette con speck e zucchine",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Insalata di polpo prezzemolata",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Pasta frolla montata",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Cream tart",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta di patate e prosciutto",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Polpette di patate",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Zucca al forno",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Gnocchi di ricotta",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pizzette di sfoglia",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Spaghetti aglio olio e peperoncino",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Crocchette di patate",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Parmigiana di patate",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Brodo di carne",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Salsiccia e patate al forno",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Risotto alla salsiccia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta all'acqua",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Vellutata di broccoli",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Mezze maniche al tonno",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta e zucchine",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Rose del deserto",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Falafel di ceci (Felafel)",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Spaghetti di soia",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Risotto alla parmigiana",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Cavoletti di Bruxelles in padella",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Babaganoush",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Ossobuco alla milanese",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Cannoli siciliani",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cheesecake tiramisù",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Muffin con il cuore",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Salsa verde",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Caprese al limone",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Risotto radicchio e gorgonzola",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Ghiaccia reale",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Tarte tatin",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Muffin ai mirtilli",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Frittelle di mele",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Plumcake salato",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Nutellotti",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta di banane",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Bollito",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Bignè alla crema",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta con broccoli",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Caponata",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Pasta Sfoglia",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Burrito",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Torta cremosa di mele",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Mini cheesecake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Cupcake al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Frittata di patate",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Risotto mele e speck",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Torta foresta nera",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Savoiardi",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Ciambella marmorizzata",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Quiche di zucchine",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Cipolline in agrodolce",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Riso Venere con gamberetti e zucchine",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Polpo alla luciana",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Polpette di zucchine",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Pizza di scarola",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Insalata tiepida di polpo e patate",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Pancake senza uova",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Frittata di spaghetti",
+    "Tipologia": "piatto unico"
+  },
+  {
+    "Titolo": "Vellutata di cavolfiore",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pancake alla banana",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Risotto al gorgonzola",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Orecchiette",
+    "Tipologia": "base"
+  },
+  {
+    "Titolo": "Gnocco fritto",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Baccalà mantecato alla veneziana",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Torta di yogurt al cioccolato",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Torta di mele senza burro",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pollo alla salsa di soia",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Baci di dama",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pumpkin pie",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Pasta alla sorrentina",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Involtini di verza",
+    "Tipologia": "secondo"
+  },
+  {
+    "Titolo": "Strudel di mele con pasta sfoglia",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Capesante gratinate",
+    "Tipologia": "antipasto"
+  },
+  {
+    "Titolo": "Verdure al forno",
+    "Tipologia": "contorno"
+  },
+  {
+    "Titolo": "Anelletti al forno",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Vellutata di porri con crostini saporiti",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Pasta al forno bianca",
+    "Tipologia": "primo"
+  },
+  {
+    "Titolo": "Fluffy pancake",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Empanadas argentine",
+    "Tipologia": "lievitato"
+  },
+  {
+    "Titolo": "Crostata alla crema di limoni",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Ciambella",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Stelle (biscotti) di Natale",
+    "Tipologia": "dolce"
+  },
+  {
+    "Titolo": "Bonet",
+    "Tipologia": "dolce"
+  }
+]

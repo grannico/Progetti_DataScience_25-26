@@ -26,13 +26,6 @@ pipeline:
     epochs: 100
     constrain_similarities: true
     
-  # Mapper: Gestisce i sinonimi (es: uova = tuorli)
-  - name: EntitySynonymMapper
-  
-  - name: ResponseSelector
-    epochs: 100
-    constrain_similarities: true
-    
   # --- FALLBACK: GESTIONE "NON HO CAPITO" ---
   # Se la confidenza è sotto il 70% (0.7), attiva l'intent 'nlu_fallback'
   - name: FallbackClassifier

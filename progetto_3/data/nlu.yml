@@ -7,8 +7,32 @@ nlu:
     - buongiorno
     - ehi chef
     - start
+    - /start
     - ciao frigo
     - ehi
+    - salve
+    - buonasera
+    - ciao chef
+    - eccomi
+    - iniziamo
+    - ciao, cominciamo pure
+    - buongiorno, possiamo iniziare?
+    - salve chef, sono pronto
+
+- intent: nuova_ricerca
+  examples: |
+    - nuova ricerca
+    - facciamo una nuova ricerca
+    - ricominciamo
+    - ripartiamo da capo
+    - azzera tutto
+    - cancella i criteri
+    - dimentica la ricerca precedente
+    - voglio ricominciare
+    - resetta la ricerca
+    - cominciamo da zero
+    - pulisci i filtri
+    - elimina tutti i criteri
 
 - intent: goodbye
   examples: |
@@ -17,22 +41,29 @@ nlu:
     - a presto
     - basta così
     - grazie mille
+    - ci vediamo
+    - alla prossima
+    - grazie, ho finito
+    - possiamo chiudere
+    - va bene così, ciao
 
 - intent: cerca_ricetta
   examples: |
-    # Esempi con la Carbonara/Amatriciana (per risolvere il tuo problema specifico)
     - in frigo ho del [guanciale](ingrediente), delle [uova](ingrediente) e del [pecorino](ingrediente)
     - una ricetta facile con [guanciale](ingrediente), [uova](ingrediente) e [pecorino](ingrediente)
     - cucinare con [guanciale](ingrediente) e [pomodoro](ingrediente)
     - ho [pancetta](ingrediente) e [uova](ingrediente)
-    
-    # Esempi generici (Verdure, Carne, Pesce)
     - ho [uova](ingrediente) e [zucchine](ingrediente)
     - cosa posso cucinare con [pollo](ingrediente) e [patate](ingrediente)?
     - ho il frigo vuoto, mi è rimasta solo della [pasta](ingrediente) e del [tonno](ingrediente)
     - trovami una ricetta con [melanzane](ingrediente)
     - [pomodori](ingrediente), [mozzarella](ingrediente) e [basilico](ingrediente)
     - ho solo [cipolle](ingrediente) e [carote](ingrediente)
+    - ho della [carne](ingrediente) e una [cipolla](ingrediente)
+    - [carne](ingrediente) e [cipolla](ingrediente)
+    - vorrei cucinare la [carne](ingrediente) con le [cipolle](ingrediente)
+    - ho del [pesce](ingrediente) e delle [patate](ingrediente)
+    - vorrei cucinare del [pesce](ingrediente) con i [pomodori](ingrediente)
     - vorrei usare del [riso](ingrediente)
     - cucinare con [funghi](ingrediente) e [panna](ingrediente)
     - ricetta con [gamberi](ingrediente) e [zucchine](ingrediente)
@@ -41,15 +72,11 @@ nlu:
     - ho [petto di pollo](ingrediente) e [limone](ingrediente)
     - [zucca](ingrediente) e [salsiccia](ingrediente)
     - [pesce spada](ingrediente) e [pomodorini](ingrediente)
-    
-    # Esempi Dolci
     - ho [farina](ingrediente), [zucchero](ingrediente) e [uova](ingrediente)
     - cosa faccio con [cioccolato](ingrediente) e [panna](ingrediente)?
     - [mascarpone](ingrediente) e [caffè](ingrediente)
     - [mele](ingrediente) e [cannella](ingrediente)
     - [ricotta](ingrediente) e [gocce di cioccolato](ingrediente)
-    
-    # Esempi conversazionali complessi
     - ho voglia di un [dolce](tipologia) [facile](difficolta) da preparare e [veloce](tempo_req)
     - dammi una ricetta [veloce](tempo_req) per la cena
     - vorrei un [primo](tipologia) [facile](difficolta) con [zucchine](ingrediente)
@@ -57,49 +84,170 @@ nlu:
     - cerco un [secondo](tipologia) di [pesce](ingrediente) [rapido](tempo_req)
     - una [torta](tipologia) che si fa in [poco tempo](tempo_req)
     - ricetta [media](difficolta) con [patate](ingrediente)
-
-    # Esempi con PIATTI SPECIFICI (Fondamentale per il Tiramisù)
-    - ho voglia di [tiramisù](tipologia)
-    - come si fa la [carbonara](tipologia)?
-    - ricetta della [parmigiana](tipologia)
-    - vorrei mangiare [lasagne](tipologia)
-    - mi dai la ricetta del [risotto ai funghi](tipologia)
-    - [torta di mele](tipologia)
-    - [ciambellone](tipologia)
-    - [crepes](tipologia)
-    
-    # Esempi conversazionali misti
     - un [dolce](tipologia) [veloce](tempo_req)
     - una [torta](tipologia) [facile](difficolta)
     - un [primo](tipologia) sfizioso
-
-    # ESEMPI PER IMPASTI (Fondamentali per Focaccia/Pizza)
     - ho [farina](ingrediente), [lievito](ingrediente), [olio](ingrediente) e [sale](ingrediente)
     - [acqua](ingrediente), [farina](ingrediente) e [lievito di birra](ingrediente)
     - una ricetta con [lievito](ingrediente) e [zucchero](ingrediente)
     - vorrei impastare qualcosa con [farina 00](ingrediente) e [olio evo](ingrediente)
     - ho del [lievito istantaneo](ingrediente)
     - [sale](ingrediente), [olio](ingrediente), [farina](ingrediente)
-    
-    # ESEMPI LISTE LUNGHE (Per insegnargli a non perdersi pezzi)
     - in frigo ho [uova](ingrediente), [latte](ingrediente), [burro](ingrediente) e [zucchero](ingrediente)
     - [pomodori](ingrediente), [tonno](ingrediente), [mais](ingrediente) e [olive](ingrediente)
-
-    # ESEMPI 
+    - ho del [mais](ingrediente)
+    - cerca una ricetta con [mais](ingrediente)
+    - cosa posso preparare con il [mais](ingrediente)?
+    - ho delle [arachidi](ingrediente)
+    - cerca una ricetta con [arachidi](ingrediente)
+    - cosa preparo con le [arachidi](ingrediente)?
     - voglio preparare un [dolce](tipologia) senza usare gli ingredienti di prima
     - cambia tipologia vorrei un [secondo](tipologia)
     - adesso passiamo al [dessert](tipologia)
     - fammi vedere dei [primi](tipologia)
     - cerca un [antipasto](tipologia) invece
+    - ho [pollo](ingrediente) e [patate](ingrediente), ma senza [formaggio](ingrediente_escluso)
+    - vorrei una ricetta [vegetariana](preferenza_alimentare) con [zucchine](ingrediente)
+    - usa [solo quello che ho](modalita_ricerca): [uova](ingrediente) e [farina](ingrediente)
+
+- intent: cerca_ricetta_titolo
+  examples: |
+    - ho voglia di [tiramisù](titolo_ricetta)
+    - come si fa la [carbonara](titolo_ricetta)?
+    - ricetta della [parmigiana](titolo_ricetta)
+    - vorrei mangiare le [lasagne alla bolognese](titolo_ricetta)
+    - mi dai la ricetta del [risotto ai funghi](titolo_ricetta)?
+    - come preparo la [torta di mele](titolo_ricetta)?
+    - voglio fare il [ciambellone](titolo_ricetta)
+    - mostrami le [crepes dolci e salate](titolo_ricetta)
+    - come si fa il [pollo alla cacciatora](titolo_ricetta)?
+    - vorrei la ricetta del [bonet](titolo_ricetta)
+    - voglio cucinare la [torta paradiso](titolo_ricetta)
+    - spiegami la preparazione degli [spaghetti alla carbonara](titolo_ricetta)
+    - cerca la ricetta delle [polpette al sugo](titolo_ricetta)
+    - sai preparare il [vitello tonnato](titolo_ricetta)?
+    - mi interessa la [parmigiana di melanzane](titolo_ricetta)
+    - vorrei preparare la [pasta alla norma](titolo_ricetta)
+    - trovami il [risotto alla zucca](titolo_ricetta)
+    - dammi il procedimento della [torta tenerina](titolo_ricetta)
+    - conosci la ricetta del [chili con carne](titolo_ricetta)?
+    - cerco la [focaccia alla genovese](titolo_ricetta)
+    - mi spieghi il [baccalà mantecato alla veneziana](titolo_ricetta)?
+    - vorrei fare gli [spaghetti aglio olio e peperoncino](titolo_ricetta)
+    - come preparo il [risotto radicchio e gorgonzola](titolo_ricetta)?
+    - dammi la ricetta per gli [spaghetti alla carbonaraa](titolo_ricetta)
+    - come preparo la [carbonara](titolo_ricetta)?
 
 - intent: fornisce_ingredienti
   examples: |
     - aggiungi anche [carote](ingrediente)
     - ho anche del [sedano](ingrediente)
+    - sì, ho anche il [basilico](ingrediente)
+    - sì, ho il [basilico](ingrediente)
+    - sì, ce l'ho, è [basilico](ingrediente)
+    - ho anche quell'ingrediente
     - usa pure [olio](ingrediente) e [sale](ingrediente)
     - ah, ho anche [aglio](ingrediente)
     - metti anche il [pepe](ingrediente)
     - considera anche il [burro](ingrediente)
+    - mi sono dimenticato delle [patate](ingrediente)
+    - c'è anche del [latte](ingrediente)
+    - aggiungiamo [pomodoro](ingrediente)
+    - usa anche le [cipolle](ingrediente)
+    - posso usare pure il [formaggio](ingrediente)
+    - è del [pollo](ingrediente)
+    - ho del [manzo](ingrediente)
+    - si tratta di [maiale](ingrediente)
+    - come pesce ho il [salmone](ingrediente)
+    - ho della [ricotta](ingrediente)
+    - sono [spaghetti](ingrediente)
+
+- intent: nega_ingrediente
+  examples: |
+    - no
+    - no, non ce l'ho
+    - non ce l'ho
+    - non ho quell'ingrediente
+    - purtroppo no
+    - quello mi manca
+    - non è disponibile
+    - preferisco farne a meno
+    - non voglio usarlo
+    - non ne ho
+    - no grazie, non lo possiedo
+    - non ho la salsa
+    - non ho il [timo](ingrediente_escluso) ma ho il [burro](ingrediente)
+    - non ho la [salsa](ingrediente_escluso), però ho il [formaggio](ingrediente)
+    - non ho la [cipolla](ingrediente_escluso) ma posso usare l'[aglio](ingrediente)
+    - quello mi manca, però ho anche il [latte](ingrediente)
+    - no, ma ho delle [uova](ingrediente)
+    - non ho il [pomodoro](ingrediente_escluso), ho le [zucchine](ingrediente)
+
+- intent: escludi_ingrediente
+  examples: |
+    - senza [formaggio](ingrediente_escluso)
+    - non usare le [uova](ingrediente_escluso)
+    - escludi il [latte](ingrediente_escluso)
+    - niente [cipolla](ingrediente_escluso)
+    - non voglio [aglio](ingrediente_escluso)
+    - evita il [burro](ingrediente_escluso)
+    - togli la [panna](ingrediente_escluso)
+    - non mettere [peperoncino](ingrediente_escluso)
+    - cerca senza [pomodoro](ingrediente_escluso)
+    - elimina [carne](ingrediente_escluso) e [pesce](ingrediente_escluso)
+    - non posso mangiare [noci](ingrediente_escluso)
+    - preferisco evitare il [glutine](ingrediente_escluso)
+    - senza [arachidi](ingrediente_escluso)
+    - evita il [mais](ingrediente_escluso)
+    - voglio preparare qualcosa senza [latte](ingrediente_escluso)
+    - cuciniamo evitando il [burro](ingrediente_escluso)
+
+- intent: imposta_modalita
+  examples: |
+    - usa la modalità [rigorosa](modalita_ricerca)
+    - voglio usare [solo ciò che ho](modalita_ricerca)
+    - non voglio comprare altri ingredienti
+    - cerca con [solo quello che ho](modalita_ricerca)
+    - imposta la ricerca [flessibile](modalita_ricerca)
+    - posso comprare [uno o due ingredienti](modalita_ricerca)
+    - mi vanno bene [uno o due ingredienti in più](modalita_ricerca)
+    - usa la modalità [libera](modalita_ricerca)
+    - proponimi [liberamente](modalita_ricerca) qualcosa
+    - fai una ricerca [senza limiti](modalita_ricerca)
+    - passa alla modalità [rigorosa](modalita_ricerca)
+    - voglio una ricerca [libera](modalita_ricerca)
+    - posso comprare [un paio di ingredienti](modalita_ricerca)
+    - accetto [qualche ingrediente mancante](modalita_ricerca)
+    - mostrami anche risultati [approssimativi](modalita_ricerca)
+    - allarga la ricerca con la modalità [libera](modalita_ricerca)
+
+- intent: imposta_preferenza
+  examples: |
+    - sono [vegetariano](preferenza_alimentare)
+    - preferisco ricette [vegetariane](preferenza_alimentare)
+    - seguo una dieta [vegana](preferenza_alimentare)
+    - voglio mangiare [vegano](preferenza_alimentare)
+    - cerco ricette [senza glutine](preferenza_alimentare)
+    - sono [celiaco](preferenza_alimentare)
+    - preferisco piatti [senza lattosio](preferenza_alimentare)
+    - sono intollerante al [lattosio](preferenza_alimentare)
+    - imposta la preferenza [vegetariana](preferenza_alimentare)
+    - aggiungi la preferenza [vegana](preferenza_alimentare)
+    - non ho [nessuna preferenza](preferenza_alimentare)
+    - rimuovi [tutte le preferenze](preferenza_alimentare)
+    - devo seguire una dieta [senza lattosio](preferenza_alimentare)
+    - evito il [lattosio per intolleranza](preferenza_alimentare)
+    - elimina [ogni preferenza alimentare](preferenza_alimentare)
+    - sono [vegetariano](preferenza_alimentare), ho solo le [patate](ingrediente)
+    - sono [vegetariana](preferenza_alimentare) e ho [zucchine](ingrediente)
+    - seguo una dieta [vegana](preferenza_alimentare) e ho [ceci](ingrediente)
+    - sono [vegano](preferenza_alimentare), posso usare [pomodori](ingrediente) e [riso](ingrediente)
+    - cerco qualcosa [senza glutine](preferenza_alimentare) con [patate](ingrediente)
+    - sono intollerante al [lattosio](preferenza_alimentare) e ho [uova](ingrediente)
+    - sono [vegetariano](preferenza_alimentare) e voglio un [secondo](tipologia) a base di [carne](ingrediente)
+    - seguo una dieta [vegana](preferenza_alimentare) ma vorrei usare le [uova](ingrediente)
+    - sono [celiaco](preferenza_alimentare) e vorrei un piatto di [pasta](ingrediente)
+    - sono intollerante al [lattosio](preferenza_alimentare) ma vorrei usare il [latte](ingrediente)
 
 - intent: sorprendimi
   examples: |
@@ -110,3 +258,47 @@ nlu:
     - ho voglia di qualcosa di buono ma non so cosa
     - mi sento fortunato
     - dimmi una ricetta a caso
+    - proponimi qualcosa tu
+    - scegli una ricetta per me
+    - voglio una proposta casuale
+    - decidi tu cosa cucinare
+
+- intent: inizia_cucinare
+  examples: |
+    - iniziamo a cucinare
+    - voglio preparare questa ricetta
+    - guidami nella preparazione
+    - cucina ora
+    - va bene, cuciniamo questa
+    - mostrami il procedimento
+    - voglio iniziare la preparazione
+    - cominciamo con questa ricetta
+    - spiegami come prepararla
+    - procediamo con la cottura
+    - avvia la modalità chef
+    - partiamo dal primo passaggio
+    - aiutami a cucinarla
+    - scelgo questa ricetta
+    - iniziamo la ricetta che ho selezionato
+    - guidami passo dopo passo con questa ricetta
+    - cominciamo a preparare il piatto scelto
+
+- intent: step_successivo
+  examples: |
+    - avanti
+    - prossimo passaggio
+    - ho fatto
+    - continua con il prossimo step
+    - fatto, andiamo avanti
+    - passiamo allo step seguente
+    - ho completato questo passaggio
+    - qual è il prossimo passaggio?
+    - questa fase è conclusa, cosa viene dopo?
+    - qual è il prossimo passaggio
+    - continua
+    - procedi con la ricetta
+    - vai al passaggio successivo
+    - completato
+    - mostrami il prossimo step
+    - sono pronto per continuare
+    - cosa devo fare adesso

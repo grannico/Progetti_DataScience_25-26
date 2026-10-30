@@ -1,0 +1,303 @@
+version: "3.1"
+
+nlu:
+- lookup: titolo_ricetta
+  examples: |
+    - Tiramisù
+    - Torta tenerina
+    - Torta di mele
+    - Tortino di cioccolato con cuore fondente
+    - Crepes dolci e salate (ricetta base)
+    - Pancake
+    - Pasta per la pizza
+    - Besciamella
+    - Spaghetti alla Carbonara
+    - Risotto alla zucca
+    - Crema pasticcera
+    - Polpette al sugo
+    - Muffin con gocce di cioccolato
+    - Cookies
+    - Pasta frolla
+    - Focaccia (fügassa) alla genovese
+    - Spaghetti all'Amatriciana
+    - Gnocchi di patate
+    - Pasta alla gricia
+    - Brownies
+    - Salame di cioccolato
+    - Gateau di patate
+    - Orecchiette con le cime di rapa
+    - Ragù alla bolognese
+    - Ravioli cinesi al vapore
+    - Torta al cioccolato
+    - Patate al forno
+    - Crepe alla Nutella
+    - Lasagne alla bolognese
+    - Cinnamon rolls
+    - Strudel di mele
+    - Pizzoccheri
+    - Chili con carne
+    - Sachertorte
+    - Torta 7 vasetti
+    - Vellutata di zucca
+    - Cavolfiori gratinati
+    - Biscotti di pan di zenzero (gingerbread)
+    - New York Cheesecake
+    - Torta della nonna
+    - Pasta con la zucca
+    - Focaccia morbida
+    - Pasta e lenticchie
+    - Purè di patate
+    - Spätzle di spinaci con speck e panna
+    - Parmigiana di melanzane
+    - Risotto allo zafferano
+    - Gnocchi alla romana
+    - Risotto ai funghi porcini
+    - Involtini primavera
+    - Filetto al pepe verde
+    - Hummus
+    - Panzerotti fritti
+    - Pan di Spagna
+    - Torta di carote
+    - Polpette di zucca
+    - Spezzatino di manzo
+    - Torta caprese
+    - Spaghetti alle vongole
+    - Crema di zucca
+    - Crema al mascarpone
+    - Pasta fresca all'uovo (sfoglia e formati)
+    - Farinata di ceci
+    - Muffin al cioccolato
+    - Brasato al Barolo
+    - Danubio salato
+    - Pasta e fagioli
+    - Risotto ai funghi
+    - Castagnaccio alla toscana
+    - Rotolo alla Nutella
+    - Cosce di pollo al forno
+    - Spaghetti Cacio e Pepe
+    - Pollo alle mandorle
+    - Spezzatino di vitello con patate
+    - Gnocchi di zucca
+    - Cheesecake fredda
+    - Riso alla cantonese
+    - Pollo al curry
+    - Chiffon cake
+    - Polpette di carne
+    - Cheesecake ai frutti di bosco
+    - Passatelli in brodo
+    - Pasta e patate alla napoletana
+    - Guacamole
+    - Spezzatino con piselli
+    - Waffle
+    - Castagne al forno
+    - Banana bread
+    - Torta all'arancia
+    - Ravioli di carne giapponesi (Gyoza)
+    - Profiteroles al cioccolato
+    - Focaccia barese
+    - Focaccia
+    - Genovese
+    - Pasta al forno
+    - Canederli alla tirolese (Knödel)
+    - Risotto zucca e gorgonzola
+    - Zuppa di cipolle
+    - Lingue di gatto
+    - Polpette di melanzane
+    - Vin brulé (mulled wine)
+    - Ribollita
+    - Biscotti al vino
+    - Canestrelli
+    - Panna cotta
+    - Panini al latte
+    - Pasta frolla morbida
+    - Polpette di spinaci e ricotta
+    - Torta allo yogurt
+    - Bretzel
+    - Tagliatelle al ragù bianco
+    - Arancini di riso
+    - Dorayaki
+    - Couscous alle verdure
+    - Pizzette rosse
+    - Cheesecake alla Nutella
+    - Calamari ripieni
+    - Lasagne con la zucca
+    - Red Velvet Cake
+    - Saltimbocca alla romana
+    - Cioccolata calda
+    - Gnocchi alla sorrentina
+    - Panettone
+    - Scaloppine al limone
+    - Pasta zucca e salsiccia
+    - Pollo al limone
+    - Pizzicotti di pasta di mandorle
+    - Pastiera napoletana
+    - Crostata morbida al cioccolato
+    - Pasta per il pane
+    - Torta paradiso
+    - Crema catalana
+    - Pollo alla cacciatora
+    - Crostata alla confettura di albicocche
+    - Rosti
+    - Risotto al pomodoro
+    - Orecchiette broccoli e salsiccia
+    - Risotto con zucchine
+    - Cheesecake al limone
+    - Cannelloni
+    - Piadina romagnola fatta in casa
+    - Donuts
+    - Risotto con zucca e salsiccia
+    - Torta camilla
+    - Parigina
+    - Cannelloni ricotta e spinaci
+    - Minestrone di verdure
+    - Pasta e ceci
+    - Torta rustica salata
+    - Budino cachi e cacao
+    - Pollo arrosto
+    - Tortelli di zucca
+    - Torta margherita
+    - Costine glassate con salsa bbq
+    - Vitello tonnato
+    - Flan di zucca
+    - Pesto alla Genovese
+    - Torta magica
+    - Ciambellone
+    - Cantucci
+    - Panettone con lievito di birra
+    - Fegato alla veneziana
+    - Calamarata
+    - Scaloppine ai funghi
+    - Graffe
+    - Seppie con piselli
+    - Cornetti salati
+    - Pasta alla Norma
+    - Ravioli ricotta e spinaci
+    - Carne alla pizzaiola
+    - Zuppa di legumi e cereali
+    - Spaghetti alla puttanesca
+    - Omelette (ricetta base)
+    - Porridge
+    - French toast
+    - Crostata alla Nutella
+    - Salmone croccante
+    - Polpette di tonno e ricotta
+    - Crema al Parmigiano
+    - Biscotti al burro
+    - Insalata di finocchi e arance
+    - Biscotti con gocce di cioccolato
+    - Zuppa di lenticchie
+    - Pasta choux (bignè)
+    - Crostata alla frutta
+    - Sformatini di spinaci
+    - Gulash ungherese
+    - Torta soffice al limone
+    - Limoncello
+    - Ramen
+    - Orata al forno
+    - Risotto con gorgonzola, pere e noci
+    - Polenta
+    - Filetti di merluzzo al forno
+    - Mandorle pralinate
+    - Croque monsieur
+    - Ossobuco alla milanese con risotto giallo
+    - Pizza in teglia alta e morbida
+    - Brodo vegetale
+    - Struffoli
+    - Paella de marisco
+    - Frittata al forno con ricotta e spinaci
+    - Trofie con crema di zucchine e pancetta
+    - Mozzarella in carrozza
+    - Lasagne al pesto
+    - Zuppa di ceci
+    - Casatiello napoletano
+    - Polpette al forno
+    - Petti di pollo al latte
+    - Fagottini di pasta sfoglia con cuore di mela
+    - Spaghetti di riso con carne e verdure
+    - Pennette con speck e zucchine
+    - Insalata di polpo prezzemolata
+    - Pasta frolla montata
+    - Cream tart
+    - Torta di patate e prosciutto
+    - Polpette di patate
+    - Zucca al forno
+    - Gnocchi di ricotta
+    - Pizzette di sfoglia
+    - Spaghetti aglio olio e peperoncino
+    - Crocchette di patate
+    - Parmigiana di patate
+    - Brodo di carne
+    - Salsiccia e patate al forno
+    - Risotto alla salsiccia
+    - Torta all'acqua
+    - Vellutata di broccoli
+    - Mezze maniche al tonno
+    - Pasta e zucchine
+    - Rose del deserto
+    - Falafel di ceci (Felafel)
+    - Spaghetti di soia
+    - Risotto alla parmigiana
+    - Cavoletti di Bruxelles in padella
+    - Babaganoush
+    - Ossobuco alla milanese
+    - Cannoli siciliani
+    - Cheesecake tiramisù
+    - Muffin con il cuore
+    - Salsa verde
+    - Caprese al limone
+    - Risotto radicchio e gorgonzola
+    - Ghiaccia reale
+    - Tarte tatin
+    - Muffin ai mirtilli
+    - Frittelle di mele
+    - Plumcake salato
+    - Nutellotti
+    - Torta di banane
+    - Bollito
+    - Bignè alla crema
+    - Pasta con broccoli
+    - Caponata
+    - Pasta Sfoglia
+    - Burrito
+    - Torta cremosa di mele
+    - Mini cheesecake
+    - Cupcake al cioccolato
+    - Frittata di patate
+    - Risotto mele e speck
+    - Torta foresta nera
+    - Savoiardi
+    - Ciambella marmorizzata
+    - Quiche di zucchine
+    - Cipolline in agrodolce
+    - Riso Venere con gamberetti e zucchine
+    - Polpo alla luciana
+    - Polpette di zucchine
+    - Pizza di scarola
+    - Insalata tiepida di polpo e patate
+    - Pancake senza uova
+    - Frittata di spaghetti
+    - Vellutata di cavolfiore
+    - Pancake alla banana
+    - Risotto al gorgonzola
+    - Orecchiette
+    - Gnocco fritto
+    - Baccalà mantecato alla veneziana
+    - Torta di yogurt al cioccolato
+    - Torta di mele senza burro
+    - Pollo alla salsa di soia
+    - Baci di dama
+    - Pumpkin pie
+    - Pasta alla sorrentina
+    - Involtini di verza
+    - Strudel di mele con pasta sfoglia
+    - Capesante gratinate
+    - Verdure al forno
+    - Anelletti al forno
+    - Vellutata di porri con crostini saporiti
+    - Pasta al forno bianca
+    - Fluffy pancake
+    - Empanadas argentine
+    - Crostata alla crema di limoni
+    - Ciambella
+    - Stelle (biscotti) di Natale
+    - Bonet

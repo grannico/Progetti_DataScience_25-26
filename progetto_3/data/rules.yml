@@ -2,10 +2,16 @@ version: "3.1"
 
 rules:
 
-  # --- REGOLE BASE (Le tue esistenti) ---
   - rule: Rispondi sempre al saluto
     steps:
     - intent: greet
+    - action: action_nuova_ricerca
+    - action: utter_greet
+
+  - rule: Avvia una nuova ricerca
+    steps:
+    - intent: nuova_ricerca
+    - action: action_nuova_ricerca
     - action: utter_greet
 
   - rule: Saluta sempre alla fine
@@ -13,33 +19,56 @@ rules:
     - intent: goodbye
     - action: utter_goodbye
 
-  # --- REGOLE CORE (Nuove Funzionalità) ---
-  
-  # 1. Quando l'utente cerca ingredienti -> Esegui Motore di Ricerca
   - rule: Cerca Ricetta
     steps:
     - intent: cerca_ricetta
     - action: action_cerca_ricette
 
-  # 2. Quando l'utente clicca "Cucina Ora" -> Avvia la modalità Chef
+  - rule: Cerca una ricetta per titolo
+    steps:
+    - intent: cerca_ricetta_titolo
+    - action: action_cerca_ricette
+
+  - rule: Aggiungi ingredienti alla ricerca
+    steps:
+    - intent: fornisce_ingredienti
+    - action: action_cerca_ricette
+
+  - rule: Escludi ingrediente non disponibile
+    steps:
+    - intent: nega_ingrediente
+    - action: action_cerca_ricette
+
+  - rule: Escludi ingrediente richiesto dall'utente
+    steps:
+    - intent: escludi_ingrediente
+    - action: action_cerca_ricette
+
+  - rule: Imposta modalità di ricerca
+    steps:
+    - intent: imposta_modalita
+    - action: action_cerca_ricette
+
+  - rule: Imposta preferenza alimentare
+    steps:
+    - intent: imposta_preferenza
+    - action: action_cerca_ricette
+
   - rule: Attiva Modalità Chef (Inizio Cucinare)
     steps:
     - intent: inizia_cucinare
     - action: action_inizia_cucinare
 
-  # 3. Quando l'utente clicca "Fatto! ✅" -> Mostra lo step successivo
   - rule: Avanzamento Step Ricetta
     steps:
     - intent: step_successivo
     - action: action_step_successivo
     
-  # 4. Fallback generale per NLU (Non ho capito)
   - rule: Fallback rule (Non ho capito)
     steps:
     - intent: nlu_fallback
-    - action: utter_default
+    - action: action_smart_fallback
 
-  # 5. Quando l'utente chiede una ricetta a sorpresa -> Fornisci Ricetta Random
   - rule: Sorprendimi (Ricetta Random)
     steps:
     - intent: sorprendimi

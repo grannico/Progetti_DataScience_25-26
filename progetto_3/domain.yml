@@ -4,26 +4,76 @@ intents:
   - greet
   - goodbye
   - cerca_ricetta
+  - cerca_ricetta_titolo
   - fornisce_ingredienti
+  - nega_ingrediente
+  - escludi_ingrediente
+  - imposta_modalita
+  - imposta_preferenza
   - inizia_cucinare
   - step_successivo
   - sorprendimi
+  - nuova_ricerca
 
 entities:
   - ingrediente
+  - ingrediente_escluso
   - tipologia     # Es: dolce, primo, secondo
   - difficolta    # Es: facile, media
   - tempo_req     # Es: veloce, rapido
-  - titolo_ricetta 
+  - modalita_ricerca
+  - preferenza_alimentare
+  - titolo_ricetta
 
 slots:
-  # --- SLOT DI RICERCA (Esistenti) ---
+
   ingrediente:
     type: list
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: ingrediente
+
+  # Memoria gestita dalla custom action: serve per aggiungere ingredienti
+  # nei turni successivi senza perdere quelli gia indicati dall'utente.
+  ingredienti_memoria:
+    type: list
+    influence_conversation: false
+    mappings: []
+
+  # Indica che il bot ha chiesto gli ingredienti dopo una ricerca basata
+  # solo su tipologia/difficolta/tempo.
+  ricerca_in_attesa:
+    type: bool
+    influence_conversation: false
+    initial_value: false
+    mappings: []
+
+  ingrediente_da_chiarire:
+    type: text
+    influence_conversation: false
+    mappings: []
+
+  ingrediente_suggerito:
+    type: text
+    influence_conversation: false
+    mappings: []
+
+  ingredienti_esclusi:
+    type: list
+    influence_conversation: false
+    mappings: []
+
+  modalita_ricerca:
+    type: text
+    influence_conversation: false
+    initial_value: guidata
+    mappings: []
+
+  preferenze_alimentari:
+    type: list
+    influence_conversation: false
+    mappings: []
   
   tipologia:
     type: text
@@ -46,7 +96,6 @@ slots:
     - type: from_entity
       entity: tempo_req
 
-  # --- NUOVI SLOT TECNICI (Per la Cucina Interattiva) ---
   # Questi slot vengono riempiti solo dalle Custom Actions (Python),
   # quindi usiamo "mappings: []" (lista vuota) o custom.
   titolo_ricetta:
@@ -58,6 +107,13 @@ slots:
       
   titolo_ricetta_corrente:
     type: text
+    influence_conversation: false
+    mappings: []
+
+  # ID delle ricette mostrate nell'ultima risposta. Permette di usare anche
+  # frasi testuali come "cucina ora" senza dipendere soltanto dal pulsante.
+  ultime_ricette_proposte:
+    type: list
     influence_conversation: false
     mappings: []
 
@@ -74,7 +130,22 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Ciao! Sono FrigoChef 🍳. Dimmi cosa hai nel frigo (es: 'ho uova e zucchine')!"
+  - text: |-
+      👨‍🍳 Ciao, sono FrigoChef!
+
+      Posso cercare ricette a partire dagli ingredienti che hai, trovare una preparazione tramite il suo titolo oppure proporti qualcosa a sorpresa.
+
+      Puoi anche indicare preferenze alimentari, escludere ingredienti e scegliere la modalità di ricerca.
+
+      Dimmi cosa hai in frigo, ad esempio “ho uova e zucchine”, oppure scrivi “sorprendimi”.
+      Per ricominciare in qualsiasi momento, scrivi “nuova ricerca”.
+    buttons:
+    - title: "🥕 Cerca con gli ingredienti"
+      payload: "/cerca_ricetta"
+    - title: "🎲 Sorprendimi"
+      payload: "/sorprendimi"
+    - title: "🔄 Nuova ricerca"
+      payload: "/nuova_ricerca"
   utter_goodbye:
   - text: "Buon appetito! 👋"
   utter_default:
@@ -86,3 +157,9 @@ actions:
   - action_inizia_cucinare
   - action_step_successivo
   - action_sorprendimi
+  - action_smart_fallback
+  - action_nuova_ricerca
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false

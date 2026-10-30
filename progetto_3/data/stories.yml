@@ -5,6 +5,7 @@ stories:
 - story: Percorso felice ricerca ricetta
   steps:
   - intent: greet
+  - action: action_nuova_ricerca
   - action: utter_greet
   - intent: cerca_ricetta
   - action: action_cerca_ricette
@@ -14,6 +15,7 @@ stories:
 - story: Ricerca con aggiunta ingredienti
   steps:
   - intent: greet
+  - action: action_nuova_ricerca
   - action: utter_greet
   - intent: cerca_ricetta
   - action: action_cerca_ricette

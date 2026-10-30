@@ -1,91 +1,129 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
 
 stories:
-- story: happy path 1
+- story: saluto e ricerca ricetta
   steps:
   - user: |
-      hello there!
+      ciao
     intent: greet
+  - action: action_nuova_ricerca
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      ho uova e zucchine
+    intent: cerca_ricetta
+    entities:
+    - ingrediente: uova
+    - ingrediente: zucchine
+  - action: action_cerca_ricette
 
-- story: happy path 2
+- story: ricerca e aggiunta ingrediente
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      vorrei un primo facile con zucchine
+    intent: cerca_ricetta
+    entities:
+    - tipologia: primo
+    - difficolta: facile
+    - ingrediente: zucchine
+  - action: action_cerca_ricette
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      aggiungi anche carote
+    intent: fornisce_ingredienti
+    entities:
+    - ingrediente: carote
+  - action: action_cerca_ricette
+
+- story: richiesta ricetta veloce
+  steps:
   - user: |
-      bye-bye!
+      dammi una ricetta veloce con pollo
+    intent: cerca_ricetta
+    entities:
+    - tempo_req: veloce
+    - ingrediente: pollo
+  - action: action_cerca_ricette
+
+- story: ricetta casuale
+  steps:
+  - user: |
+      sorprendimi
+    intent: sorprendimi
+  - action: action_sorprendimi
+
+- story: avvio e avanzamento preparazione
+  steps:
+  - user: |
+      /inizia_cucinare{"titolo_ricetta":"0"}
+    intent: inizia_cucinare
+    entities:
+    - titolo_ricetta: "0"
+  - action: action_inizia_cucinare
+  - user: |
+      /step_successivo
+    intent: step_successivo
+  - action: action_step_successivo
+
+- story: fallback
+  steps:
+  - user: |
+      asdfghjkl
+    intent: nlu_fallback
+  - action: action_smart_fallback
+
+- story: ricerca ricetta per titolo
+  steps:
+  - user: |
+      come si fa il pollo alla cacciatora
+    intent: cerca_ricetta_titolo
+    entities:
+    - titolo_ricetta: pollo alla cacciatora
+  - action: action_cerca_ricette
+
+- story: esclusione esplicita
+  steps:
+  - user: |
+      senza arachidi
+    intent: escludi_ingrediente
+    entities:
+    - ingrediente_escluso: arachidi
+  - action: action_cerca_ricette
+
+- story: preferenza alimentare
+  steps:
+  - user: |
+      sono vegano
+    intent: imposta_preferenza
+    entities:
+    - preferenza_alimentare: vegano
+  - action: action_cerca_ricette
+
+- story: modalita flessibile
+  steps:
+  - user: |
+      posso comprare uno o due ingredienti
+    intent: imposta_modalita
+    entities:
+    - modalita_ricerca: uno o due ingredienti
+  - action: action_cerca_ricette
+
+- story: rifiuto ingrediente suggerito
+  steps:
+  - user: |
+      no non ce l'ho
+    intent: nega_ingrediente
+  - action: action_cerca_ricette
+
+- story: saluto finale
+  steps:
+  - user: |
+      grazie mille
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
+- story: nuova ricerca
   steps:
   - user: |
-      hello
-    intent: greet
+      azzera tutto
+    intent: nuova_ricerca
+  - action: action_nuova_ricerca
   - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
-
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot

@@ -1,0 +1,78 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hei FrigoChef, ci sei?
+    - buondì, partiamo
+    - posso cominciare a usare il bot?
+
+- intent: goodbye
+  examples: |
+    - ti ringrazio, ci sentiamo
+    - per oggi può bastare
+    - chiudo qui, buon lavoro
+
+- intent: cerca_ricetta
+  examples: |
+    - nel cassetto ho [riso](ingrediente), [piselli](ingrediente) e [zafferano](ingrediente): che preparo?
+    - suggerisci un [primo](tipologia) non troppo [difficile](difficolta) usando [melanzane](ingrediente)
+    - mi serve una cena [rapida](tempo_req) con [tonno](ingrediente) e [pomodorini](ingrediente)
+    - sono rimasti [ceci](ingrediente), [carote](ingrediente) e [rosmarino](ingrediente)
+
+- intent: cerca_ricetta_titolo
+  examples: |
+    - potresti illustrarmi le [seppie con piselli](titolo_ricetta)?
+    - cerco istruzioni per la [pasta e fagioli](titolo_ricetta)
+    - hai il procedimento dell'[orata al forno](titolo_ricetta)?
+    - vorrei sapere tutto sui [saltimbocca alla romana](titolo_ricetta)
+
+- intent: fornisce_ingredienti
+  examples: |
+    - mi sono accorto che c'è pure il [sedano](ingrediente)
+    - puoi contare anche la [mozzarella](ingrediente)
+    - nell'elenco manca il [limone](ingrediente)
+
+- intent: nega_ingrediente
+  examples: |
+    - quel prodotto non è in casa
+    - devo rispondere di no
+    - non posso aggiungerlo
+
+- intent: escludi_ingrediente
+  examples: |
+    - prepara tutto purché non contenga [funghi](ingrediente_escluso)
+    - scarta le ricette in cui compare il [latte](ingrediente_escluso)
+    - il [peperoncino](ingrediente_escluso) deve rimanere fuori
+    - non includere né [carne](ingrediente_escluso) né [pesce](ingrediente_escluso)
+
+- intent: imposta_modalita
+  examples: |
+    - limita i risultati a ciò che possiedo già
+    - va bene acquistare al massimo due cose mancanti
+    - non porre vincoli sul numero di ingredienti extra
+
+- intent: imposta_preferenza
+  examples: |
+    - considera che seguo un'alimentazione [vegetariana](preferenza_alimentare)
+    - mostrami esclusivamente alternative [vegane](preferenza_alimentare)
+    - per motivi di salute scelgo piatti [senza glutine](preferenza_alimentare)
+    - azzera i vincoli alimentari memorizzati
+
+- intent: sorprendimi
+  examples: |
+    - inventa tu la proposta di oggi
+    - affidiamo la scelta alla sorte
+    - non ho preferenze, decidi al posto mio
+
+- intent: inizia_cucinare
+  examples: |
+    - avvia la guida per il piatto selezionato
+    - sono pronto a eseguire la preparazione
+    - portami dall'inizio alla fine della ricetta
+
+- intent: step_successivo
+  examples: |
+    - la fase corrente è terminata
+    - indicami l'istruzione seguente
+    - possiamo avanzare di uno step
